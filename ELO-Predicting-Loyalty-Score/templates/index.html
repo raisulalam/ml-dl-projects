@@ -1,0 +1,171 @@
+<html>
+<body background="image.jpg">
+	
+    <h1 >ELO - Predicting Customer Loyalty Score</h1>
+	
+	
+<div>
+
+  <form action="/predict" method="POST">
+    <label for="first_active_month">first_active_month</label>
+	<input type="date" name="first_active_month"/>
+      <!--<textarea name="first_active_month" rows="1" cols="20"></textarea>>-->
+	 <br></br>
+	<label for="card_id">card_id</label>
+		<textarea name="card_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="feature_1">feature_1</label>
+		
+		<select name="feature_1" id="feature_1">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		
+		<!--<textarea name="feature_1" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="feature_2">feature_2</label>
+		<select name="feature_2" id="feature_2">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<!--<textarea name="feature_2" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="feature_3">feature_3</label>
+		<select name="feature_3" id="feature_3">
+			<option value="0">0</option>
+			<option value="1">1</option>
+		</select>
+		<!--<textarea name="feature_3" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_authorized_flag">hist_authorized_flag</label>
+		<select name="hist_authorized_flag" id="hist_authorized_flag">
+			<option value="Y">Y</option>
+			<option value="N">N</option>
+		</select>
+		<!--<textarea name="hist_authorized_flag" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_city_id">hist_city_id</label>
+		<textarea name="hist_city_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_category_1">hist_category_1</label>
+		<select name="hist_category_1" id="hist_category_1">
+			<option value="Y">Y</option>
+			<option value="N">N</option>
+		</select>
+		<!--<textarea name="hist_category_1" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_installments">hist_installments</label>
+		<textarea name="hist_installments" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_category_3">hist_category_3</label>
+		<select name="hist_category_3" id="hist_category_3">
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+		<!--<textarea name="hist_category_3" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_merchant_category_id">hist_merchant_category_id</label>
+		<textarea name="hist_merchant_category_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_merchant_id">hist_merchant_id</label>
+		<textarea name="hist_merchant_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_month_lag">hist_month_lag</label>
+		<textarea name="hist_month_lag" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_purchase_amount">hist_purchase_amount</label>
+		<textarea name="hist_purchase_amount" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_purchase_date">hist_purchase_date</label>
+		<input type="datetime-local" name="hist_purchase_date"/>
+		<!--<textarea name="hist_purchase_date" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_category_2">hist_category_2</label>
+		<select name="hist_category_2" id="hist_category_2">
+			<option value="1.0">1.0</option>
+			<option value="2.0">2.0</option>
+			<option value="3.0">3.0</option>
+			<option value="4.0">4.0</option>
+			<option value="5.0">5.0</option>
+		</select>
+		<!--<textarea name="hist_category_2" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="hist_state_id">hist_state_id</label>
+		<textarea name="hist_state_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="hist_subsector_id">hist_subsector_id</label>
+		<textarea name="hist_subsector_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_authorized_flag">new_authorized_flag</label>
+		<select name="new_authorized_flag" id="new_authorized_flag">
+			<option value="Y">Y</option>
+			<option value="N">N</option>
+		</select>
+		<!--<textarea name="new_authorized_flag" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="new_city_id">new_city_id</label>
+		<textarea name="new_city_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_category_1">new_category_1</label>
+		<select name="new_category_1" id="new_category_1">
+			<option value="Y">Y</option>
+			<option value="N">N</option>
+		</select>
+		<!--<textarea name="new_category_1" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="new_installments">new_installments</label>
+		<textarea name="new_installments" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_category_3">new_category_3</label>
+		<select name="new_category_3" id="new_category_3">
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+		<!--<textarea name="new_category_3" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="new_merchant_category_id">new_merchant_category_id</label>
+		<textarea name="new_merchant_category_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_merchant_id">new_merchant_id</label>
+		<textarea name="new_merchant_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_month_lag">new_month_lag</label>
+		<textarea name="new_month_lag" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_purchase_amount">new_purchase_amount</label>
+		<textarea name="new_purchase_amount" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_purchase_date">new_purchase_date</label>
+		<input type="datetime-local" name="new_purchase_date"/>
+		<!--<textarea name="new_purchase_date" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="new_category_2">new_category_2</label>
+		<select name="new_category_2" id="new_category_2">
+			<option value="1.0">1.0</option>
+			<option value="2.0">2.0</option>
+			<option value="3.0">3.0</option>
+			<option value="4.0">4.0</option>
+			<option value="5.0">5.0</option>
+		</select>
+		<!--<textarea name="new_category_2" rows="1" cols="20"></textarea>>-->
+		<br></br>
+	<label for="new_state_id">new_state_id</label>
+		<textarea name="new_state_id" rows="1" cols="20"></textarea>>
+		<br></br>
+	<label for="new_subsector_id">new_subsector_id</label>
+		<textarea name="new_subsector_id" rows="1" cols="20"></textarea>>
+		<br></br>
+
+    <br></br>
+    <input type="submit" value="Loyalty Score">
+  </form>
+  
+</div>
+</body>
+</html>
